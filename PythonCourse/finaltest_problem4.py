@@ -59,7 +59,7 @@ def decode(text, n):
         n = c.next()
         reader += n
         if reader > l:
-            reader = reader - 2n
+            reader = reader - 2*n
         reader = reader % l
         p_text += text[reader]
 
